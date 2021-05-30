@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+  </head>
+  <body>
+      <main class="form-parent-box">
+        <form id="login-form" action="portal.html" onsubmit="validateLogin(inputName.value,inputPassword.value);" method="post">
+
+          <div class="label-div">
+            <label for="name">Nome</label>
+            <input id="input-name" type="text" name="name" placeholder="Nome" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos" required>
+          </div>
+
+          <div class="label-div">
+            <label for="password">Senha</label>
+            <input id="input-password" type="password" name="password" placeholder="Senha" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos" required>
+          </div>
+
+          <button class="submit-button" type="submit" name="submitBtn">Enviar</button>
+
+          <p class="button-caption">Ainda não tem conta?</p>
+
+          <a class="submit-button" id="anchor-button-login" href="tipocadastro.html">Cadastre-se</a>
+
+        </form>
+      </main>
+    <script type="text/javascript" src="./js/functions.js"></script>
+  </body>
+</html>

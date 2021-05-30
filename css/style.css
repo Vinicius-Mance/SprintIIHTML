@@ -1,0 +1,103 @@
+/* default configuration style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+  /* border: solid 1px red !important; */
+  font-size: 120%;
+}
+
+*:focus{
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-image: url(../img/.bg.jpg);
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: overlay;
+}
+
+:root {
+    --light-gray: #F5F7FA;
+    --light-black: #737D8C;
+    --blue-theme: #0068FF;
+    --blue-theme--hover: #0a5fda;
+    --light-blue: #BFD9FF;
+    --blue-secondary: #0049BF;
+    --blue-dark: #001029;
+    --danger-theme: #eb3b5a;
+    --success-theme: #20bf6b;
+}
+
+/* form style */
+form {
+  width: 100%;
+  height: 100%;
+}
+
+.form-parent-box {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.label-div {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap
+}
+
+.label-div label, .label-div input{
+  width: 80%;
+  margin: 5px auto;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.submit-button{
+  display: block;
+  margin: 5px auto;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: var(--blue-theme);
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: var(--blue-theme--hover);
+}
+
+#anchor-button-login {
+  width: 9rem;
+}
+
+.anchor-button {
+  max-width: 15rem;
+}
+
+.button-caption {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#signup-title {
+  width: 80%;
+  font-size: 1rem;
+  margin: 0 auto;
+}
