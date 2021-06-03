@@ -17,14 +17,20 @@ function validateLogin(namePar,passwordPar) {
                 {"name":"Alexandre","password":"pepsi"}
               ];
 
+  let mensagemErro;
+
   for (var i = 0; i < users.length; i++) {
 
     if (users[i].name == namePar && users[i].password == passwordPar) {
       return  window.location.href="portal.html";
+    } else if (users[i].name != namePar) {
+      mensagemErro = "Nome de usuário incorreto";
+    } else {
+      mensagemErro = "Senha incorreta";
+      break;
     }
-
   }
-  alert("Nome ou senha incorretos");
+  alert(mensagemErro);
 }
 
 // validação formulário cpf
