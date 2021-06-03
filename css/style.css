@@ -58,7 +58,7 @@ form {
   flex-flow: row wrap
 }
 
-.label-div label, .label-div input{
+.label-div label, .label-div input, .label-div select,.label-div select option, .label-div textarea{
   width: 80%;
   margin: 5px auto;
   padding: 5px;
@@ -96,7 +96,7 @@ form {
   text-align: center;
 }
 
-#signup-title {
+.title {
   width: 80%;
   font-size: 1rem;
   margin: 0 auto;

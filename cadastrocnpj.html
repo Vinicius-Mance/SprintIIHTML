@@ -4,13 +4,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Cadstro CNPJ</title>
+    <title>Cadastro CNPJ</title>
   </head>
   <body>
       <main class="form-parent-box">
-        <h1 id="signup-title">Qual tipo de cadastro você quer fazer?</h1>
-        <a class="submit-button anchor-button" href="#">Pessoa física (CPF)</a>
-        <a class="submit-button anchor-button" href="#">Pessoa jurídica (CNPJ)</a>
+        <form id="cnpj-form" action="index.html" method="post">
+          <h1 class="title">Cadastro CNPJ</h1>
+
+          <div class="label-div">
+            <label for="nome">Nome</label>
+            <input required id="nome" type="text" name="nome" placeholder="Nome" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="cnpj">CNPJ</label>
+            <input required id="cnpj" type="text" name="cnpj" placeholder="00.000.000/0000-00" pattern="[0-9]{14}" title="Escreva um CNPJ válido">
+          </div>
+
+          <div class="label-div">
+            <label for="idade">Idade da empresa</label>
+            <input required id="idadeEmpresa" type="text" name="idade" placeholder="idade" pattern="[0-9].*" title="Somente números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="descricao">Descrição de ramo principal de atuação</label>
+            <textarea required id="descricao" placeholder="Descreva o principal ramo de atuação de sua empresa" name="descricao" rows="5" cols="80"></textarea>
+          </div>
+
+          <div class="label-div">
+            <label for="email">E-mail</label>
+            <input required id="email" type="email" name="email" placeholder="youremail@hotmail.com" pattern="[A-Za-z0-9]+@+[A-Za-z-.]+[.]+[A-Za-z]{3}" title="Escreva um email válido">
+          </div>
+
+          <div class="label-div">
+            <label for="telefone">Telefone</label>
+            <input required id="telefone" type="text" name="telefone" placeholder="(11)123456789" pattern="[0-9]{11}" title="insira um numero de telefone válido">
+          </div>
+        <!-- address -->
+          <div class="label-div">
+            <label for="cep">CEP</label>
+            <input required id="cep" id="cep" type="text" name="cep" placeholder="00000-000" pattern="[0-9]{8}" title="Insira um CEP válido">
+          </div>
+
+          <div class="label-div">
+            <label for="logradouro">Endereço</label>
+            <input required id="logradouro" type="text" name="logradouro" placeholder="Av.Cristal" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="numeroEndereco">Número</label>
+            <input required id="numeroEndereco" type="text" name="numeroEndereco" placeholder="999" pattern="[0-9].*" title="Somente números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="complemento">Complemento</label>
+            <input id="complemento" type="text" name="complemento" placeholder="casa b" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="bairro">Bairro</label>
+            <input required id="bairro" type="text" name="bairro" placeholder="Limoeiro" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="cidade">Cidade</label>
+            <input required id="cidade" type="text" name="cidade" placeholder="São Paulo" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="estado">Estado</label>
+            <input required id="estado" type="text" name="estado" placeholder="São Paulo" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <div class="label-div">
+            <label for="pais">País</label>
+            <input required id="pais" type="text" name="pais" placeholder="Brasil" pattern="[A-Za-z0-9].*" title="Somente letras e números são permitidos">
+          </div>
+
+          <button class="submit-button" type="submit" name="submitBtn">Enviar</button>
+
+          <p class="button-caption">Já tem conta?</p>
+
+          <a class="submit-button" id="anchor-button-login" href="index.html">Faça login</a>
+
+        </form>
       </main>
     <script type="text/javascript" src="./js/functions.js"></script>
   </body>
